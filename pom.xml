@@ -8,7 +8,7 @@
 		<version>3.1.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.fiap.pet-tech</groupId>
+	<groupId>br.com.fiap</groupId>
 	<artifactId>pet-tech</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>pet-tech</name>

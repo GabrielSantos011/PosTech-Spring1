@@ -1,4 +1,4 @@
-package br.com.fiap.pettech;
+package br.com.fiap.pettech.entities;
 
 import jakarta.persistence.*;
 

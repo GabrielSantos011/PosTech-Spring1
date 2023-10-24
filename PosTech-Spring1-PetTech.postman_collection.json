@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "460c5e9b-f2f5-44a6-9ab7-c43a2b837fbd",
+		"name": "PosTech-Spring1-PetTech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12698051"
+	},
+	"item": [
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Path}}/produtos/listar",
+					"host": [
+						"{{Path}}"
+					],
+					"path": [
+						"produtos",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Path}}/produtos/get/769516bf-ae06-4394-96bb-93c34ca97453",
+					"host": [
+						"{{Path}}"
+					],
+					"path": [
+						"produtos",
+						"get",
+						"769516bf-ae06-4394-96bb-93c34ca97453"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Bolinha para pet 3\",\r\n    \"descricao\": \"Bolinha colorida\",\r\n    \"preco\": 20.0,\r\n    \"urlDaImagem\": \"dsifhdudf.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Path}}/produtos/cadastro",
+					"host": [
+						"{{Path}}"
+					],
+					"path": [
+						"produtos",
+						"cadastro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Bolinha para pet Atualizadooooo\",\r\n    \"descricao\": \"Bolinha colorida\",\r\n    \"preco\": 20.0,\r\n    \"urlDaImagem\": \"dsifhdudf.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Path}}/produtos/atualiza/769516bf-ae06-4394-96bb-93c34ca97453",
+					"host": [
+						"{{Path}}"
+					],
+					"path": [
+						"produtos",
+						"atualiza",
+						"769516bf-ae06-4394-96bb-93c34ca97453"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Bolinha para pet Atualizadooooo\",\r\n    \"descricao\": \"Bolinha colorida\",\r\n    \"preco\": 20.0,\r\n    \"urlDaImagem\": \"dsifhdudf.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Path}}/produtos/delete/769516bf-ae06-4394-96bb-93c34ca97453",
+					"host": [
+						"{{Path}}"
+					],
+					"path": [
+						"produtos",
+						"delete",
+						"769516bf-ae06-4394-96bb-93c34ca97453"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Path",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
